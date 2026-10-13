@@ -22,7 +22,7 @@ Tạo một Git repository trên máy tính, kết nối tới GitHub và đồn
 
 1. Tạo repository mới trên GitHub, đặt tên `thuc-hanh-git-nong-thanh-chung`. Chọn **Public** và không tạo README tự động.
 2. Cài Git for Windows nếu máy chưa có Git.
-3. Mở PowerShell hoặc Git Bash và chạy các lệnh dưới đây:
+3. Mở PowerShell hoặc Git Bash trong thư mục dự án và chạy các lệnh dưới đây. Thay `<URL-repository-cua-ban>` bằng URL HTTPS repository bạn vừa tạo trên GitHub:
 
 ```powershell
 cd "$HOME\Downloads\NONGTHANHCHUNG\GitPractice"
@@ -45,4 +45,4 @@ git config user.email "địa-chỉ-email-của-bạn"
 
 ## Lưu ý
 
-Repository chỉ được tạo sau khi bạn tạo nó trên GitHub. Terminal trong môi trường hiện tại chưa nhận lệnh `git`; vì vậy cần cài Git for Windows trước khi thực hiện quy trình đồng bộ bằng lệnh. Thay email ví dụ bằng email của bạn, không gửi email hoặc thông tin đăng nhập cho người khác.
+Trong bài thực hành này, Git for Windows đã được cài đặt; repository local được khởi tạo trên nhánh `main`, README được stage và commit, sau đó đẩy lên repository GitHub. Khi Git yêu cầu xác thực lúc push, hoàn tất xác thực trong trình duyệt GitHub. Không chia sẻ mật khẩu hoặc mã xác thực với người khác.
